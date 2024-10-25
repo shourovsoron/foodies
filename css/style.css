@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+    --primary-color: #A82C48;
+    --secondary-color: #43121d;
+    --third-color: #f98169;
+    --white-color: #fff;
+    --text-color: #555;
+    --text-gray: #999;
+    --black-color: #000;
+    --primary-font: "Roboto", sans-serif;
+    --secondary-font: "Quicksand", sans-serif;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+}
+
+
+*,
+*::after,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color) !important;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 1.6rem;
+    font-size: 100%;
+
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+
+/* Reset CSS End */
+
+
+/* Utility Class Design */
+
+.fw-regular {
+    font-weight: var(--fw-regular);
+}
+
+.fw-medium {
+    font-weight: var(--fw-medium);
+}
+
+.fw-semi-bold {
+    font-weight: var(--fw-semi-bold);
+}
+
+.fw-bold {
+    font-weight: var(--fw-bold);
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-bottom: 3rem;
+
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-transform: capitalize;
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    line-height: 3rem;
+
+}
+
+h4 {
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+
+}
+
+h5 {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+
+}
+
+p {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+
+
+
+
+.main-btn {
+    display: inline-flex;
+    padding: 0.625rem 1.875rem;
+    color: var(--white-color);
+    background: var(--primary-color);
+    font-size: 0.9375rem;
+    border: 0.1875rem solid var(--primary-color);
+    font-weight: 600;
+    outline: none;
+    align-items: center;
+    gap: 1.3rem;
+    justify-content: center;
+    cursor: pointer;
+    width: fit-content;
+    text-transform: capitalize;
+    transition: all .4s ease-out 0s;
+    -webkit-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    -ms-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0/19%);
+}
+
+.main-btn:hover {
+    background: transparent;
+    color: var(--primary-color);
+}
+
+
+.white-btn {
+    display: inline-flex;
+    padding: 0.625rem 1.875rem;
+    color: var(--text-color);
+    background: var(--white-color);
+    font-size: 0.9375rem;
+    border: 0.1875rem solid var(--white-color);
+    font-weight: 600;
+    outline: none;
+    align-items: center;
+    gap: 1.3rem;
+    justify-content: center;
+    cursor: pointer;
+    width: fit-content;
+    text-transform: capitalize;
+    transition: all .4s ease-out 0s;
+    -webkit-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    -ms-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0/19%);
+}
+
+.white-btn:hover {
+    background: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.text-content {
+    width: 70%;
+    margin: auto;
+}
+
+.counter-section h2,
+.testimonial-section h2,
+.book-food h2 {
+    color: var(--white-color);
+
+}
+
+
+.section-gap{
+    padding: 8.25rem 0rem;
+}
+
+
+
+/* Main CSS Start Here */
+.navigation-wrap {
+    z-index: 1000;
+    background-color: var(--white-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+.navigation-wrap .nav-item {
+    padding: 0rem 0.625rem;
+    transition: all 0.3s ease-out;
+
+}
+
+.navbar-toggler:focus {
+    outline: unset;
+    background: unset;
+    border: unset;
+    box-shadow: unset;
+    color: #000;
+}
+
+.nav-link {
+    font-style: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+.navigation-wrap .main-btn {
+    box-shadow: unset;
+    margin-left: 0.625rem;
+    padding: 0.3125rem 1.4375rem;
+
+}
+
+.navigation-wrap.scroll-on {
+    background-color: var(--white-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 0.125rem 1.75rem rgb(0 0 0 / 15%);
+}
+
+.top-banner {
+    width: 100%;
+    background: url(../images/bg/bg-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 16.875rem 0rem 9.375rem;
+
+}
+
+
+
+/* Counter Section STart */
+.counter-section {
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 2.5rem 0rem;
+}
+
+.counter-section p {
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: unset;
+
+}
+
+/* About section */
+.about-section{
+    background: var(--white-color);
+
+}
+
+.about-section .card,
+.about-section .card img{
+    border-radius: 0.625rem;
+    -webkit-border-radius: 0.625rem;
+    -moz-border-radius: 0.625rem;
+    -ms-border-radius: 0.625rem;
+    -o-border-radius: 0.625rem;
+}
+
+.about-section .about-text-content{
+    padding-left: 2rem;
+}
+
+.food-type{
+    padding-top: 3.25rem;
+}
+
+.food-type .list-unstyled li{ 
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 2rem;
+    position: relative;
+    margin-left: 30px;
+
+
+}
+
+
+.food-type .list-unstyled li::before{
+    position: absolute;
+    left: -2rem;
+    font-weight: 400;
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-family: 'Font Awesome 6 Free';
+    content: "\f058";
+    font-style: normal;
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+
+}
+
+
+/* Story Section */
+.story-section{
+    width: 100%;
+    /* height: 28.125rem; */
+    background: url(../images/bg/bg-2.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0px;
+
+
+}
+
+.story-section h2{
+    color: var(--primary-color);
+}
+
+
+/* Explore Food */
+.explore-food .card{
+    border: none;
+    background-color: transparent;
+    border-radius: 0.9375rem;
+    -webkit-border-radius: 0.9375rem;
+    -moz-border-radius: 0.9375rem;
+    -ms-border-radius: 0.9375rem;
+    -o-border-radius: 0.9375rem;
+}
+
+.explore-food .card img{
+    border-radius: 0.9375rem;
+    -webkit-border-radius: 0.9375rem;
+    -moz-border-radius: 0.9375rem;
+    -ms-border-radius: 0.9375rem;
+    -o-border-radius: 0.9375rem;
+    object-fit: cover;
+
+}
+
+.explore-food .card span{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+    border-bottom:  0.0625rem solid #eee;
+}
+
+.explore-food .card span del{
+    color: var(--text-gray);
+    margin-left: .5rem;
+
+}
+
+
+
+
+/* Testimonial Section */
+
+.testimonial-section{
+    background-color: var(--primary-color);
+}
+
+.testimonial-section .carousel-item{
+    padding: 5rem 3.2125rem;
+    margin-top: 3rem;
+    background-color: #fff;
+    border-radius: 0.9375rem;
+    -webkit-border-radius: 0.9375rem;
+    -moz-border-radius: 0.9375rem;
+    -ms-border-radius: 0.9375rem;
+    -o-border-radius: 0.9375rem;
+    text-align: center;
+}
+
+.testimonial-section .carousel-item .content img{
+    max-width: 5rem;
+    width: 100%;
+    max-height: 5rem;
+    height: 100%;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.testimonial-section .carousel-item .content p{
+    font-size: 1.3125rem;
+    line-height: 2.0625rem;
+    padding: 0 11% 0.625rem;
+
+}
+.testimonial-section .carousel-indicators{
+    margin-bottom: -2.8rem;
+}
+
+.testimonial-section .carousel-indicators button{
+    width: 15px;
+    height: 15px;
+    border: none;
+    outline: unset;
+    margin-inline: 10px;
+    opacity: 0.2;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.testimonial-section .carousel-indicators button.active{
+    opacity: 1;
+
+}
+
+/* FAQ SECTION */
+
+.faq-section h4 span{
+    color: var(--primary-color);
+    font-size: 1.875rem;
+    margin-right: 0.3125rem;
+}
+
+
+/* book food section */
+
+.book-food{
+    background: url(../images/bg/bg-3.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 4.375rem 0rem;
+    width: 100%;
+} 
+
+/* Newsletter */
+.newsletter{
+
+}
+
+.newsletter-form{
+    width: 50%;
+    margin-inline: auto;
+}
+
+.newsletter-form .form-control{
+    height: 3.225rem;
+    padding: 0 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border: 0.1875rem solid var(--text-gray);
+    color: black;
+}
+
+.newsletter-form .form-control:hover,
+.newsletter-form .form-control:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+#footer{
+    background: var(--primary-color);
+}
+
+#footer .footer-link{
+    font-size: 1rem;
+    color: var(--white-color);
+    padding: 0 1.75rem;
+
+    
+}
+
+#footer .footer-link:hover{
+    color: var(--white-color) !important;
+    
+}
+#footer .footer-social{
+    gap: 2rem;
+    
+    
+}
+#footer .footer-social a{
+    color: var(--white-color);
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    
+    
+}
+
+#footer .copyright p{
+    color: #fff;
+
+}

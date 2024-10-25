@@ -1,0 +1,111 @@
+@media (max-width: 991px) {
+
+    /* Custom Classes */
+    .text-content {
+        width: 100%;
+        margin: auto;
+    }
+
+
+
+    /* Header */
+    .navbar-brand img {
+        height: 3.8rem;
+    }
+
+    .about-section .about-text-content{
+        padding-left: unset;
+    }
+
+    .food-type .row{
+        flex-flow: column-reverse;
+    }
+
+    .story-section{
+        padding: 4rem 0rem;
+    
+    
+    }
+
+    /* Testimonial Section */
+    .testimonial-section .carousel-item .content p{
+        padding: 0;
+    }
+
+    .testimonial-section .carousel-item{
+        padding: 7rem 3.2125rem;
+    }
+
+    /* Newsletter */
+
+    .newsletter-form{
+        width: 85%;
+        margin-inline: auto;
+    }
+
+
+#footer .footer-link{
+    font-size: 1rem;
+    color: var(--white-color);
+    padding: 0 0.75rem;
+
+    
+}
+
+#footer .footer-link:hover{
+    color: var(--white-color) !important;
+    
+}
+#footer .footer-social{
+    gap: 2rem;
+    
+    
+}
+#footer .footer-social a{
+    color: var(--white-color);
+    font-size: 1.5rem;
+    padding: 0 .5rem;
+    
+    
+}
+
+#footer .copyright p{
+    color: #fff;
+
+}
+    
+    
+
+
+
+}
+
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        line-height: 2.0625rem;
+    }
+
+    .top-banner {
+
+        padding: 10rem 0rem 9.375rem;
+    
+    }
+
+    .newsletter-form{
+        width: 90%;
+        margin-inline: auto;
+    }
+
+    .newsletter-form .main-btn{
+        width: 100%;
+    }
+
+    
+
+}
